@@ -143,7 +143,7 @@ function addItemsFromGroceryList() {
     };
 
     //3. append label to the div
-    div.appendChild(label);
+    div.prepend(label);
   });
 }
 
@@ -238,7 +238,7 @@ function addItem() {
       };
 
       //3. append label to the div
-      div.appendChild(label);
+      div.prepend(label);
 
       saveToLocalStorage();
     }
