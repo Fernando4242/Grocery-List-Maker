@@ -114,13 +114,14 @@ function addItemsFromGroceryList() {
       "list-group-item",
       "d-flex",
       "justify-content-between",
-      "align-items-center"
+      "align-items-center","flex-wrap","p-2"
     );
 
     //create more tags to append into screen
     // input = document.createElement("input"),
     // span = document.createElement("p");
-    number = document.createElement("p");
+    number = document.createElement("span");
+    number.classList.add("badge" ,"bg-primary", "my-auto");
     // input.type = "checkbox";
 
     //change value according to user input on item
@@ -174,7 +175,7 @@ function create_list() {
 //function addItem() to add items (user input) to list and append to screen
 function addItem() {
   //check if there is value : require a value
-  if (itemInput.value.length != 0) {
+  if (itemInput.value.length != 0 && !((itemInput.value).includes(";"))) {
     //capatalize first letter
     var groceryItem = capitalize(itemInput.value);
     var numItem = parseInt(bar.value);
@@ -187,13 +188,14 @@ function addItem() {
       "list-group-item",
       "d-flex",
       "justify-content-between",
-      "align-items-center"
+      "align-items-center","flex-wrap" , "p-2"
     );
 
     //create more tags to append into screen
     // input = document.createElement("input"),
     // span = document.createElement("p");
     number = document.createElement("p");
+    number.classList.add("badge" ,"bg-primary" , "my-auto");
     // input.type = "checkbox";
 
     let duplicateValue = checkDuplicate(groceryItem);
@@ -246,7 +248,7 @@ function addItem() {
     id++;
   } else {
     //alert user
-    alert("Enter a value in the field");
+    alert("Enter a valid input");
   }
 
   //reset and print to console for checking
