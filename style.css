@@ -1,0 +1,195 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  flex-flow: column;
+}
+
+.hidden{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+/* 
+container css*/ 
+.container-fluid{
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+   min-height: 80vh;
+}
+
+.my-auto{
+  margin-top: auto;
+margin-bottom: auto;
+}
+
+/*top-bar css to maintain in place*/ 
+.top-bar{
+  width: 100%;
+  height: 10vh;
+  font-size: 2rem;
+}
+
+.top-bar h1{
+  margin: 10px;
+}
+
+.clear-start-scene,.list-found-scene{
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.inputs-add-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke ;
+  text-align: center;
+}
+
+.btn{
+  margin-top: 10px;
+  width: 100px;
+}
+
+.list-container{
+  margin-top: 2%;
+}
+
+#customRange2{
+  width: 200px;
+}
+
+#list{
+  max-width: 75%;
+}
+
+
+.input-container{
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+/* 
+#name-input{
+  padding: 8px;
+  width: 210px;
+  text-align: center;
+  
+  border: solid 2px black;
+} */
+
+#num-item{
+  text-align: center;
+  width: 100px;
+}
+
+/*look of the lable being appended*/
+label{
+  margin-top: 10px;
+  width: 300px;
+  height: auto;
+  background-color: whitesmoke;
+  color: black;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label p{
+  padding: 10px;
+}
+
+
+
+/* label p:nth-child(1){
+  width: 45%;
+  margin-left: 5%;
+  text-align: left;
+}
+
+label p:nth-child(2){
+  width: 45%;
+  margin-right: 5%;
+  text-align: right;
+} */
+
+li:hover{
+    transform: translateZ(1);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transform: scale(1.1);
+}
+
+.list-active-button{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.list-active-button input{
+  width:100px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.list-active-button input:hover{
+  transform: scale(1.1);
+}
+
+/* footer {
+  clear: both;
+  position: relative; 
+  z-index: 1; 
+  height: -3em; 
+  margin-top: 30em; 
+} */
+
+footer { 
+  width: 100%;
+  min-height: 10vh;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 8px;
+}
+
+footer i{
+  color: whitesmoke;
+  transition: all 0.5ms;
+}
+
+i:hover{
+  transform: scale(1.3);
+}
+
