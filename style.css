@@ -72,6 +72,8 @@ container css*/
 
 .list-container {
   margin-top: 2%;
+  max-height: 50vh;
+  overflow-y: scroll;
 }
 
 #customRange2 {
