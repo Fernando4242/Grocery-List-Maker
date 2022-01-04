@@ -15,9 +15,5 @@
     "jspdf-autotable": "^3.5.23",
     "require": "^0.4.4",
     "requirejs": "^2.3.6"
-  },
-  "devDependencies": {
-    "@types/jspdf": "^2.0.0",
-    "netlify-plugin-js-obfuscator": "^1.0.21"
   }
 }
