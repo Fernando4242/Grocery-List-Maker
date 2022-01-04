@@ -17,6 +17,7 @@
     "requirejs": "^2.3.6"
   },
   "devDependencies": {
-    "@types/jspdf": "^2.0.0"
+    "@types/jspdf": "^2.0.0",
+    "netlify-plugin-js-obfuscator": "^1.0.21"
   }
 }
